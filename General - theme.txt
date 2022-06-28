@@ -1,0 +1,72 @@
+Footer ID:
+footer
+Contenido web básico
+Contenido web básico
+
+ALerta Mantenimiento ID:
+alerta-mantenimiento
+est-alerta-mantenimiento
+tmpl-alerta-mantenimiento
+
+Menu Porvenir ID:
+menu-porvenir
+Menu
+Menu
+
+Menu Generación ID:
+menu-generacion-porvenir
+Menu
+Menu
+
+Menu Construyendo ID:
+menu-construyendo-porvenir
+Menu
+Menu
+
+Menu Consolidando ID:
+menu-consolidando-porvenir
+Menu
+Menu
+
+Menu disfrutando ID:
+menu-disfrutando-porvenir
+Menu
+Menu
+
+Menu empresa ID:
+menu-empresa
+Menu
+Menu
+
+---------------------------------------------------------------------------------------
+Theme:
+ShareThis - Redes sociales(sin ID)
+https://platform-api.sharethis.com/js/sharethis.js#property=5b57988df5aa6d001130ce81&amp;product=sticky-share-buttons
+Sin estructura
+
+Perfilador 
+Sin estructura
+
+modalEncuesta
+MODAL
+Sin estructura
+
+errorGeneralServicio
+MODAL
+Sin estructura
+
+sharethis-inline-share-buttons
+??
+
+zp-alerta-box zp-alerta-box--cookies
+Alerta cookies
+Sin estructura
+
+zp-alerta-leyendo
+Scroll Back
+Sin estructura
+
+usertools
+Agrandar Letra - Achicar letra
+Sin estructura
+
