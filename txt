@@ -1,0 +1,2 @@
+
+alt="${imagen_dos.getAttribute("alt")}"
