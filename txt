@@ -25,3 +25,13 @@ https://getbootstrap.com/docs/4.0/components/navs/
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
+
+
+:focus-visible {
+    outline: black auto 1px !important;
+    /* remove default focus style */
+  outline: none;
+  /* custom focus styles */
+  box-shadow: 0 0 2px 2px #FF5722!important;
+  
+}
