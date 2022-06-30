@@ -42,3 +42,7 @@ for (var i = 0; i < collection.length; i++) {
 }
 
 ${.vars['reserved-article-id'].data}
+
+git 
+git commit -a -S -m 'signed commit'
+git push
