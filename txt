@@ -35,3 +35,8 @@ https://getbootstrap.com/docs/4.0/components/navs/
   box-shadow: 0 0 2px 2px #FF5722!important;
   
 }
+
+const collection = document.getElementsByClassName("example");
+for (var i = 0; i < collection.length; i++) {
+    collection[i].setAttribute("href",'#')
+}
