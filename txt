@@ -40,3 +40,5 @@ const collection = document.getElementsByClassName("example");
 for (var i = 0; i < collection.length; i++) {
     collection[i].setAttribute("href",'#')
 }
+
+${.vars['reserved-article-id'].data}
