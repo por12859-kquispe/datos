@@ -43,6 +43,8 @@ for (var i = 0; i < collection.length; i++) {
 
 ${.vars['reserved-article-id'].data}
 
+git status
 git add .
-git commit -a -S -m 'signed commit'
-git push
+git commit -a -s -m 'feat: delete }'
+git push origin feature/Accesibilidad_zonapublica
+git pull origin feature/Accesibilidad_zonapublica
