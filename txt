@@ -45,6 +45,9 @@ ${.vars['reserved-article-id'].data}
 
 git status
 git add .
-git commit -a -s -m 'feat: delete }'
+git commit -a -S -m 'feat: delete }'
+@dmin00788
 git push origin feature/Accesibilidad_zonapublica
 git pull origin feature/Accesibilidad_zonapublica
+
+https://qa.afpporvenir.com/group/articulos-de-interes/~/control_panel/manage?p_p_id=com_liferay_journal_web_portlet_JournalPortlet&p_p_lifecycle=0&p_p_state=maximized&p_v_l_s_g_id=64092&p_p_auth=YnxNTbv7
