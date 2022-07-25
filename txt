@@ -53,3 +53,4 @@ git pull origin feature/Accesibilidad_zonapublica
 https://qa.afpporvenir.com/group/articulos-de-interes/~/control_panel/manage?p_p_id=com_liferay_journal_web_portlet_JournalPortlet&p_p_lifecycle=0&p_p_state=maximized&p_v_l_s_g_id=64092&p_p_auth=YnxNTbv7
 
 https://app.contrast-finder.org/
+Asegúrese de que el elemento al que se hace referencia en el valor del atributo aria-labelledby o aria-describedby esté presente en la página y presente una etiqueta o descripción adecuada.
