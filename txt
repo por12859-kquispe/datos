@@ -1,6 +1,8 @@
 
 alt="${imagen_dos.getAttribute("alt")}"
-
+setTimeout(function () {
+ $('#button').focus();
+}, 100);
 https://getbootstrap.com/docs/4.0/components/navs/
 
 
