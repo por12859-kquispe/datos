@@ -1,4 +1,8 @@
 
+$( "#book" ).fadeIn( "slow", function() {
+    // Animation complete
+  });
+
 alt="${imagen_dos.getAttribute("alt")}"
 setTimeout(function () {
  $('#button').focus();
