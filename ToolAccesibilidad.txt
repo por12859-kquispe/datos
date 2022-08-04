@@ -1,0 +1,273 @@
+#wrapper header#banner.open .menu-mobile-content .grid-menu #navigationMobile li .menu-content {
+    display: block;
+}
+
+#wrapper header#banner.open .menu-mobile-content .grid-menu #navigationMobile ul .btn-default-submenu .icono-cheveron-up:before {
+    content: "\eb3d";
+}
+
+#wrapper header#banner.open.active .menu-mobile-content .grid-menu #navigationMobile li .menu-content {
+    display: none;
+}
+#wrapper header#banner.open.active .menu-mobile-content .grid-menu #navigationMobile ul .btn-default-submenu .icono-cheveron-up:before {
+   content: "\eb36";
+}
+------------------------------------------------------------------------------------------------------
+
+$(".btnToolEnlace").click(function(e) {
+        e.preventDefault();
+		if ($("body").is('.activeacc')) {
+		    $('body').removeClass('activeacc');
+			$( ".modal-backdrop" ).remove();
+			$( ".usertoolsCont" ).css("z-index","999");
+		}
+		else{			
+		    $('body').addClass('activeacc');
+			var txt1 = "<div class='modal-backdrop show'></div>";          		
+			$(".activeacc").after(txt1);
+			$( ".usertoolsCont" ).css("z-index","9999");
+		}
+		if ($(".usertoolsCont").is('.active')) {
+			$('.usertoolsCont').removeClass('active');
+		}else{
+			$(".usertoolsCont").addClass("active");
+		}
+});
+
+<div class="usertoolsCont active" style="z-index: 9999;">
+    <div class="tooltConte">
+		<div class="enlaceCont">
+			<a class="btnToolEnlace">Ayudas</a>
+		</div>
+		<div class="divCont">
+			<div class="letra">
+				<a class="usertools__link agrandar-letra" title="Clic para agrandar letra"> 
+					<span>A+</span>
+					<p>Agrandar<br>letra</p>
+				</a>
+				<a class="usertools__link achicar-letra" title="Clic para achicar letra"> 
+					<span>A-</span>
+					<p>Achicar<br>letra</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+		
+.usertools__btn span.cont::before {
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    content: "";    
+    background: url(https://www.porvenir.com.co/o/Zona-Publica-Theme/images/ZonaPublica/arrow_btn.png) no-repeat;
+    background-size: 100%;
+    transform: rotate(180deg);
+    background-color: red;
+}	
+.usertools__btn span.cont::after {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    content: "";
+    transform: rotate(180deg);
+    vertical-align: middle;
+    background: url(https://www.porvenir.com.co/o/Zona-Publica-Theme/images/ZonaPublica/arrow_btn.png) no-repeat;;
+    background-size: 100%;
+    background-color: green;
+}	
+
+.usertools span.cont {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 39px;
+    padding-bottom: 38px;
+    height: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.usertools__btn {
+    display: block;
+    padding: 10px 10px 10px 50px;
+    color: #000;
+    border-radius: 5px 0px 0px 5px;
+    background: #fff;
+    box-shadow: -3px 1px 2px 1px rgb(0 0 0 / 20%);
+    height: 90px;
+}	
+
+.usertoolsCont {
+    position: fixed;
+    top: 2px;
+    right: -184px;
+    z-index: 999;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    pointer-events: none;
+    line-height: 1.2;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    font-size: .8125rem;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.tooltConte {
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    align-items: flex-start; /* NEW */
+}
+
+.divCont {
+    flex: auto;
+
+}
+.tooltConte > .divCont {
+  align-self:
+  stretch;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 2px 1px 2px 1px rgb(0 0 0 / 20%);
+  z-index: 9999;
+ }
+
+.enlaceCont a {
+    width: 70px;
+    height: 83px;
+    display: block;
+    z-index: 8;
+    pointer-events: all;
+    max-width: 70px;
+    padding-top: 39px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 24px;
+}
+
+.usertoolsCont.active {
+    right: 0;
+}
+
+.enlaceCont {
+    height: auto;
+    padding: 5px;
+    background-color: #fff;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: -3px 1px 2px 1px rgb(0 0 0 / 20%);
+    position: relative;
+}
+
+.usertoolsCont.active .enlaceCont {
+      align-self: stretch;
+      background: #f4f4f4;
+      
+}
+.usertoolsCont.active .enlaceCont a{
+  font-size: 0px !important;
+  color:
+  transparent;
+  max-width: 50px;
+}
+.usertoolsCont.active .enlaceCont::after{
+  top: 7px;
+  bottom:
+  auto;
+  transform: rotate(0deg);
+}
+.usertoolsCont.active .enlaceCont::before {
+    display: none;
+    font-size:0px;
+}
+
+.enlaceCont::before {
+  position: absolute;
+  top: 8px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "";    
+    background: url(https://www.porvenir.com.co/o/Zona-Publica-Theme/images/ZonaPublica/arrow_btn.png) no-repeat;
+    background-size: 100%;
+    transform: rotate(180deg);
+   
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+}
+.enlaceCont::after {
+    position: absolute;
+    bottom: 5px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    content: "";
+    transform: rotate(180deg);
+    vertical-align: middle;
+    background: url(https://www.porvenir.com.co/o/Zona-Publica-Theme/images/ZonaPublica/arrow_btn.png) no-repeat;;
+    background-size: 100%;
+   
+  margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+    }
+
+.divCont .letra {
+    display: flex;
+}
+
+.divCont .letra a {
+    background: #cb4e0b;
+    margin: 0 4px;
+    border-radius: 12px;
+    color: #fff;
+    border: 1px solid #cb4e0b;
+    pointer-events: all;
+    position:relative;
+}
+
+.divCont .letra a span {
+    background: #fff;
+    color: #cb4e0b;
+}
+
+.divCont .letra a:hover {
+    background: #fff;
+    color: #cb4e0b;
+}
+.divCont .letra a:hover:before{
+  width: 18px;
+  height: 18px;
+  background-color:
+  blue;
+  position: absolute;
+  top: 2px;
+  content: "";
+  right: 2px;
+} 
+.divCont .letra a:hover span{
+  color:#fff;
+   background:#cb4e0b;
+}
