@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Demo Escala de Grises</title>
+</head>
+<body class="body">
+    <main class="main">
+        
+			<div class="usertools active"><a class="usertools__btn">Configuración<br>y ayuda</a>
+			  <ul class="usertools__options">
+				<li class="usertools__item"><a class="usertools__link agrandar-letra" title="Clic para agrandar letra" onclick="biggerFontSize(true); return false;"> <span>A+</span>
+					<p>Agrandar<br>letra</p></a></li>
+				<li class="usertools__item"><a class="usertools__link achicar-letra" title="Clic para achicar letra" onclick="biggerFontSize(false); return false;"> <span>A-</span>
+					<p>Achicar<br>letra</p></a></li>
+			  </ul>
+			</div><a href="file:///C:/Users/user/Downloads/grayscale/grayscale/index.html">enalce</a>
+    </main>
+	    
+	<script src="./jquery.min.js"></script>
+	<script src="./main.js"></script>
+	<script>
+	var cookie_days_expire = 30;
+var defaultFontSize=100; 
+var currentFontSize; 
+var fontSizeDifference = 10;
+
+	
+		
+		
+function saveSettings(){	
+	var cookieData = currentFontSize;	
+	localStorage.setItem('resize', cookieData);
+}
+function revertFontSize(){
+	currentFontSize = defaultFontSize;
+	setFontSize(defaultFontSize);
+}
+
+function setUserSettings(fontSize_user){	
+	currentFontSize=defaultFontSize;
+	if(parseInt(fontSize_user)){currentFontSize=parseInt(fontSize_user);}
+	setFontSize(currentFontSize);	
+}
+function biggerFontSize(bigger){
+	if(bigger){
+		currentFontSize = currentFontSize + fontSizeDifference;
+		if(currentFontSize > 400){currentFontSize = 400;} 
+		}
+	else {
+		currentFontSize = currentFontSize - fontSizeDifference;
+		if(currentFontSize < 40){currentFontSize = 40;}
+		}
+	setFontSize(currentFontSize);
+}
+function readLocal(cookie_name) {
+	var cat = localStorage.getItem(cookie_name)?? false;
+	return cat;
+}
+function setFontSize(newFontSize){jQuery('body').css('font-size',newFontSize+'%');}
+
+function setUserOptions(){
+	var userDataRaw = readLocal("resize");	
+	if(!userDataRaw){
+		revertFontSize();
+	}	
+	else{
+		var userData = userDataRaw;
+		setUserSettings(userData);
+	}
+}
+function documentReady(){
+	setUserOptions();
+}
+
+jQuery(document).ready(function(){ documentReady(); });
+ $(window).on('beforeunload', function(){
+saveSettings();
+});	
+
+	</script>
+
+</body>
+</html>
