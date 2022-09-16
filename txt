@@ -157,7 +157,7 @@ var domIsReady = (function(domIsReady) {
    });
 })(document, window, domIsReady);
 
-
+onmouseover="bigImg('buenas')" onmouseout="normalImg()"
 function bigImg(x) {
    	 var img = $('<img />').attr({
             'id': 'myImage'+x,
