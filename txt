@@ -171,3 +171,4 @@ function bigImg(x) {
     function normalImg() {
     $('#container img').remove();
     }
+https://sharethis.com/es/onboarding/
