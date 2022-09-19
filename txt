@@ -172,3 +172,4 @@ function bigImg(x) {
     $('#container img').remove();
     }
 https://sharethis.com/es/onboarding/
+<script src="https://platform-api.sharethis.com/js/sharethis.js#property=5b57988df5aa6d001130ce81&amp;product=sticky-share-buttons" async="async"></script>
