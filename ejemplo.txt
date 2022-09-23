@@ -1,0 +1,22 @@
+<#assign groupId = themeDisplay.getScopeGroupId() />
+<#assign assetEntryLocalService = serviceLocator.findService("com.liferay.asset.kernel.service.AssetEntryLocalService") />
+<#assign journalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService") />
+
+
+
+ <@embedJournalArticle journalArticleData="${cur_PrincipalTitle.WebContent3uo6.getData()}" portletInstanceId="tab-content-instance${cur_PrincipalTitle?index}" />
+ 
+ <#macro embedJournalArticle journalArticleData portletInstanceId>
+    <#assign webContentData = jsonFactoryUtil.createJSONObject(journalArticleData) />
+    <#assign asset = assetEntryLocalService.getEntry( webContentData.className, getterUtil.getLong( webContentData.classPK ) ) />
+    
+    <#if validator.isNotNull(asset) && !validator.isBlank(asset)>
+		<#assign webArticle = asset.getAssetRenderer().getArticle() />
+		
+		<#if validator.isNotNull(webArticle)>	
+		    <#assign webArticleContent = journalArticleLocalService.getArticleContent( groupId, webArticle.getArticleId(), "", locale, themeDisplay ) />
+            ${webArticleContent}
+			
+		</#if>
+	</#if>
+</#macro>
