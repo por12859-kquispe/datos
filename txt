@@ -2,9 +2,7 @@
 https://qa.afpporvenir.com/group/global/~/control_panel/manage?p_p_id=com_liferay_journal_web_portlet_JournalPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_journal_web_portlet_JournalPortlet_mvcPath=%2Fview_ddm_templates.jsp&_com_liferay_journal_web_portlet_JournalPortlet_orderByCol=modified-date&_com_liferay_journal_web_portlet_JournalPortlet_orderByType=asc&_com_liferay_journal_web_portlet_JournalPortlet_resetCur=false&p_p_auth=Gp0q1KQj&_com_liferay_journal_web_portlet_JournalPortlet_delta=60
 https://qa.afpporvenir.com/group/global/~/control_panel/manage?p_p_id=com_liferay_journal_web_portlet_JournalPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_journal_web_portlet_JournalPortlet_folderId=0&_com_liferay_journal_web_portlet_JournalPortlet_orderByCol=modified-date&_com_liferay_journal_web_portlet_JournalPortlet_orderByType=desc&_com_liferay_journal_web_portlet_JournalPortlet_resetCur=false&p_p_auth=Gp0q1KQj&_com_liferay_journal_web_portlet_JournalPortlet_delta=60
 
-Para cualquier contacto con nuestra entidad escríbenos a porvenir@en-contacto.co
-Para notificaciones judiciales, escríbenos a notificacionesjudiciales@porvenir.com.co
-© 2021, Todos los derechos reservados por Porvenir S.A
+https://iconscout.com/icon-pack/social-media-red
 
 
 $( "#book" ).fadeIn( "slow", function() {
