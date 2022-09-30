@@ -1,3 +1,23 @@
+<script>
+  
+  	if (document.readyState == "loading" );
+    {
+       console.log("open");       
+    }
+    document.addEventListener('readystatechange',function (ev) {
+    	if (document.readyState == "interactive" ) 
+      {
+         console.log("interactive");
+      }
+      if (document.readyState == "complete" ) 
+      {
+         console.log("Cerrar");
+      }
+    })
+   
+  </script>
+
+
 
 <#assign journalArticlePreferencesMap = 
 					{
