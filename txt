@@ -1,3 +1,14 @@
+ $("#btn-achicar-letra").on("click",function(){
+    if (window.getComputedStyle(document.getElementById('btn-achicar-letra').fontSize == '16px'){
+        $("#btn-achicar-letra").removeClass("achicar-letra");
+    }else{
+        $("#btn-achicar-letra").addClass("achicar-letra");
+    }
+});
+
+
+
+
 <script>
   
   	if (document.readyState == "loading" );
