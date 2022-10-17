@@ -1,3 +1,12 @@
+.altoContrasGeneral .cionSocial a:focus, 
+.altoContrasGeneral .cionSocial a:hover, 
+.altoContrasGeneral .cionSocial a:focus svg, 
+.altoContrasGeneral .cionSocial a:hover svg {
+    color: #406B2B;
+    fill: #406B2B;
+} 
+ 
+ 
  $("#btn-achicar-letra").on("click",function(){
     if (window.getComputedStyle(document.getElementById('btn-achicar-letra').fontSize == '16px'){
         $("#btn-achicar-letra").removeClass("achicar-letra");
