@@ -1,3 +1,11 @@
+function scrollTopAnimated() {
+            $("html, body").animate(
+                { scrollTop: "0" }, 3000);
+        }
+
+
+
+
 .altoContrasGeneral .cionSocial a:focus, 
 .altoContrasGeneral .cionSocial a:hover, 
 .altoContrasGeneral .cionSocial a:focus svg, 
